@@ -32,7 +32,52 @@ nav a:hover {
     background-color: #1a252f;
     color: #ffffff;
 }
+/* Меню бургер */
+   #burger-menu, #close-menu {
+            display: none;
+            cursor: pointer;
+        }
 
+        @media (max-width: 768px) {
+            #burger-menu {
+                display: block;
+                position: fixed;
+                top: 10px; /* Позиція від верхнього краю */
+                right: 10px; /* Позиція від правого краю */
+                z-index: 1001; /* Забезпечує, що іконка буде поверх інших елементів */
+            }
+
+            #close-menu {
+                display: none;
+                position: fixed;
+                top: 10px; /* Позиція від верхнього краю */
+                right: 10px; /* Позиція від правого краю */
+                z-index: 1001; /* Забезпечує, що іконка буде поверх інших елементів */
+            }
+
+            nav {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(44, 62, 80, 0.8);
+                backdrop-filter: blur(10px);
+            }
+
+            nav a {
+                display: block;
+                padding: 15px;
+                color: #ecf0f1;
+                text-decoration: none;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            nav a:hover {
+                background-color: #1a252f;
+                color: #ffffff;
+            }
+        }
 section {
     max-width: 800px;
     margin: 20px auto;
