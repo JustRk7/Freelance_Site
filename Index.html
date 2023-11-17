@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    
+    <title>VoIP Connect LLC</title>
+    
+</head>
+<body>
+
+    <header>
+        <img id="burger-menu" src="images/burger.png" alt="Burger Icon" onclick="toggleMenu()">
+
+        <img id="close-menu" src="images/close.png" alt="Close Icon" onclick="toggleMenu()" style="display: none;">
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+        <p class="titlename">VoIP Connect LLC</p>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            
+            VoipConnect is one of the best VoIP service providers in the call termination market. Tired of overpaying? Voip company
+            If you need to use international communication, we will offer you transparent and affordable prices. Join us!
+        </p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <h4>Why will you like our service?</h4>
+        
+        <div class="service-block">
+            <img src="images/mobile.png" alt="Icon 1">
+            <p>Free first trial call.</p>
+        </div>
+        <div class="service-block">
+            <img src="images/plane.png" alt="Icon 2">
+            <p>Ability to call from any phone, computer or smartphone.</p>
+        </div>
+        <div class="service-block">
+            <img src="images/software.png" alt="Icon 3">
+            <p>Individual approach to each client. Personal development of a non-standard solution.</p>
+        </div>
+        <div class="service-block">
+            <img src="images/star.png" alt="Icon 4">
+            <p>The support service will help you at any time of the day.</p>
+        </div>
+        <div class="service-block">
+            <img src="images/target.png" alt="Icon 5">
+            <p>Per second billing. No rounding to the minute, as much as I said, I paid as much!</p>
+        </div>
+        <div class="service-block">
+            <img src="images/telecom-business.png" alt="Icon 6">
+            <p>No monthly or connection fees.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Have questions or ready to implement VoIP in your business? Contact us today!
+        </p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" >Submit</button>
+        </form>
+    </section>
+    <section id="faq">
+        <h2>FAQ</h2>
+        <h2>How to start using your service?</h2>
+        <p>
+            All you need to do is contact our support team and get access to your personal account where you can find out all the advantages of our service.
+        </p>
+        <h2>Do you charge per minute or per second?</h2>
+        <p>
+            Second by second, starting from the first second.
+            There is no charge to start a conversation.
+            
+        </p>
+        <h2>How to call for free?</h2>
+        <p>
+            Contact support and we will provide you with access to test our service.
+        </p>
+        <h2>What are the benefits?</h2>
+        <p>
+            Free calls within the network.
+            The cheapest calls to phones in any country, about 2-3 times, and sometimes more.
+        </p>
+        <h2>Is connection/registration free?</h2>
+        <p>
+            Yes.
+        </p>
+        <h2>Do you have a monthly (subscription) fee for outgoing calls?</h2>
+        <p>
+            No. Payment is made only for calls.
+        </p>
+        <h2>In which countries do your services operate?</h2>
+        <p>
+            Anywhere in the world where there is Internet.
+        </p>
+        <h2>How to top up your account?</h2>
+        <p>
+            The balance is replenished automatically, usually the money is credited to the account instantly.
+            The balance can be topped up in your personal account by clicking “Top up account” at the top of the screen. 
+            You can access your personal account through our support service.
+        </p>
+
+    </section>
+    <!-- фото FQA -->
+
+    <img src="images/fqa.png" alt="FAQ Icon"
+    style="position: fixed; bottom: 10px; right: 10px; width: 50px; height: 50px; cursor: pointer;"
+    onclick="openPopup()">
+
+    <footer>
+        <div class="office-info">
+            <p>Principal Office</p>
+            <p>1309 Coffeen Avenue STE 1200</p>
+            <p>Sheridan, WY 82801</p>
+            <p>USA</p>
+        </div>
+        <p class="copyright">&copy; 2023 VoIP Connect LLC. All rights reserved.</p>
+        <div class="contact-info">
+            <p>info@voip-connect.org |</p>
+            <p>+1(206) 317-1763</p> 
+
+        </div>
+        
+    </footer>
+    <!-- Спливаюче вікно -->
+    <div id="popup">
+        <h2>Have an questions?</h2>
+        <form action="submit_form.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        <span onclick="closePopup()" style="cursor: pointer; color: #010f1f;">Close</span>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
